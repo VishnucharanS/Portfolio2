@@ -66,7 +66,23 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "C++",
-      fontAwesomeClassname: "fa-solid fa-python"
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "Matlab",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "OpenCV",
+      fontAwesomeClassname: "fas fa-robot"
+    },
+    {
+      skillName: "ROS2",
+      fontAwesomeClassname: "fas fa-robot"
+    },
+    {
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-code"
     },
     {
       skillName: "HTML",
@@ -84,42 +100,37 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
-    
+    {
+      skillName: "Photoshop",
+      fontAwesomeClassname: "fas fa-image"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
 
 // Education Section
 
-const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
+  const educationInfo = {
+    display: true, // Set false to hide this section, defaults to true
+    schools: [
+      {
+        schoolName: "National Institute of Technology Tiruchirappalli",
+        logo: require("./assets/images/NITT_logo_transparent back.png"),
+        subHeader: "Bachelor of Technology in Production Engineering (Major), & Computer science (Minor)",
+        duration: "July 2021 - May 2025",
+        desc: "Worked under professors for 3 research internships, 1 bachelor thesis.",
+        descBullets: [ "Served as the Director of Campus Affairs, Technical Council, NITT", "Design head of NITTFEST'24, Cultural Fest", "Mentored School Children for national level competitive exams."
+          
+        ]
+      },
+    
   ]
 };
 
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -140,7 +151,7 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: false, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Software Engineer",
@@ -185,26 +196,15 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/cobra.webp"),
+      projectName: "Photocobra",
+      projectDesc: "An AI powered platform for Image Generation. Worked on the Reforge part of the website.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://photocobra.com/"
         }
         //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
       ]
     }
   ],
@@ -269,7 +269,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
