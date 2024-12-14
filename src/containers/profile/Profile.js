@@ -14,15 +14,19 @@ export default function Profile() {
   }
 
   useEffect(() => {
+    console.log("I was called");
     if (openSource.showGithubProfile === "true") {
+      console.log("Profile is true")
       const getProfileData = () => {
         fetch("/profile.json")
           .then(result => {
+            console.log("Result: ", result)
             if (result.ok) {
               return result.json();
             }
           })
           .then(response => {
+            console.log("REsponse data user: ", response.data.user)
             setProfileFunction(response.data.user);
           })
           .catch(function (error) {
@@ -36,17 +40,17 @@ export default function Profile() {
       getProfileData();
     }
   }, []);
-  if (
-    openSource.display &&
-    openSource.showGithubProfile === "true" &&
-    !(typeof prof === "string" || prof instanceof String)
-  ) {
-    return (
-      <Suspense fallback={renderLoader()}>
-        <GithubProfileCard prof={prof} key={prof.id} />
-      </Suspense>
-    );
-  } else {
+  // if (
+  //   openSource.display &&
+  //   openSource.showGithubProfile === "true" &&
+  //   !(typeof prof === "string" || prof instanceof String)
+  // ) {
+  //   return (
+  //     <Suspense fallback={renderLoader()}>
+  //       <GithubProfileCard prof={prof} key={prof.id} />
+  //     </Suspense>
+  //   );
+  // } else {
     return <Contact />;
-  }
+  // }
 }

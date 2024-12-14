@@ -191,6 +191,33 @@ const openSource = {
 
 // Some big projects you have worked on
 
+const myProjectsSection = { 
+  title: "My Projects",
+  subtitle: "Some of the exciting projects I've worked on.",
+  projects: [
+    {
+      projectName: "Project 1",
+      projectDesc: "A detailed description of Project 1.",
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://example.com/project1"
+        }
+      ]
+    },
+    {
+      projectName: "Project 2",
+      projectDesc: "A detailed description of Project 2.",
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://example.com/project2"
+        }
+      ]
+    }
+  ]
+};
+
 const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
@@ -365,6 +392,7 @@ export {
   workExperiences,
   openSource,
   bigProjects,
+  myProjectsSection,
   achievementSection,
   blogSection,
   talkSection,
