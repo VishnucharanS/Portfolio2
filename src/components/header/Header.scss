@@ -180,3 +180,17 @@
     font-size: 12px;
   }
 }
+
+@media (max-width: 400px) {
+  .header .logo-name {
+  font-family: "Agustina Regular";
+  font-weight: bold;
+  font-variant-ligatures: no-common-ligatures;
+  font-size: 0.8rem;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  padding: 0 10px;
+
+  .grey-color {
+    color: $subTitle;
+  }
+}}

@@ -13,6 +13,7 @@
   margin-top: 2rem;
 }
 
+
 .greeting-main {
   display: flex;
 }
@@ -33,6 +34,14 @@
 .empty-div {
   margin-bottom: 40px;
 }
+
+.greeting-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  gap: 5px;
+  }
 
 .button-greeting-div {
   display: flex;
@@ -120,8 +129,15 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .main {
     width: auto;
+  }
+  .greeting-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 5px;
   }
 }
