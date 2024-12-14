@@ -11,7 +11,8 @@ import Contact from "../contact/Contact";
 //   import("../../components/githubProfileCard/GithubProfileCard")
 // );
 export default function Profile() {
-  const [_, setrepo] = useState([]);
+  const [prof, setrepo] = useState([]);
+  void prof;
   function setProfileFunction(array) {
     setrepo(array);
   }
