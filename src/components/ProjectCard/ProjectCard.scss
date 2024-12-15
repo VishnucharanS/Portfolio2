@@ -5,18 +5,21 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease;
-}
-
-.project-card:hover {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+  
+  .project-card:hover {
     transform: scale(1.05);
-}
-
-.project-card h3 {
+  }
+  
+  .project-card h3 {
     font-size: 18px;
     font-weight: bold;
-}
-
-.project-card p {
+  }
+  
+  .project-card p {
     font-size: 14px;
     color: #666;
-}
+  }
+  

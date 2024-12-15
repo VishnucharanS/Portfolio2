@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Computer Vision, AI and Robotics enthusiast 🚀"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/18zIG_pj3c3rMvldnI7MvL65dg9v5KVRg/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/18zIG_pj3c3rMvldnI7MvL65dg9v5KVRg/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -151,33 +151,66 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: false, //Set it to true to show workExperiences Section
+  display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Bachelor's Thesis",
+      company: "NIT Trichy & CMTI",
+      companylogo: require("./assets/images/image.png"),
+      date: "October 2024 – Present",
+      desc: "Detection and  Classification of Welding defects using Machine Vision",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed a Faster R-CNN model with ResNet-50 backbone with FPN for Defect Detection, and ResNet-18 for welding defect classification.",
+        "Collaborating with CMTI – Govt. of India for further research."
+
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Research Project - BharatamVerse",
+      company: "NIT Trichy & NTNU, Norway",
+      companylogo: require("./assets/images/NITT_logo_transparent back.png"),
+      date: "October 2024 – Present",
+      desc: "Bharatanatyam Pose correction for Somaesthetics",
+      descBullets: ["Implementing an LSTM-based vision model for Bharatanatyam pose correction using skeletal keypoint extraction for real-time feedback "
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+      role: "Research intern - MCQ generation system",
+      company: "UNSW Sydney",
+      companylogo: require("./assets/images/UNSW-1-300x300.png"),
+      date: "June 2024 – July 2024",
+      desc: "MCQ generator based on Adaptive Learning",
+      descBullets: ["Designed an adaptive learning MCQ generation system. Focused on implementing emotion recognition via Deep CNN with late fusion for facial expression analysis and eye-tracking for real-time monitoring."
+      ]
+    },
+    {
+      role: "Data Analsyt and Science intern",
+      company: "Miranda Consortium",
+      companylogo: require("./assets/images/Miranda Consortium.png"),
+      date: "Jan 2024 – Aug 2024",
+      desc: "Research and analysis of LIPIT Data",
+      descBullets: ["Conducted in-depth research on LIPIT (Laser Induced Particle Impact Testing), understanding the phenomenon and its potential application using python and matlab libraries. Utilized latex, Origin Pro and excel for visualizations.",
+      ]
+    },
+    {
+      role: "Research Intern - Segmentation",
+      company: "NIT Trichy",
+      companylogo: require("./assets/images/NITT_logo_transparent back.png"),
+      date: "Nov 2023 – Feb 2024",
+      desc: "Enhancing FastSAM using tranasformers and adaptive learning",
+      descBullets: ["Implementing an LSTM-based vision model for Bharatanatyam pose correction using skeletal keypoint extraction for real-time feedback "
+      ]
+    },
+    {
+      role: "Research Intern - Analysis of CPPS",
+      company: "IIT Delhi",
+      companylogo: require("./assets/images/iit-delhi-indian-institute-of-technology-delhi5001.webp"),
+      date: "May 2023 – Aug 2023",
+      desc: "Analysis of the enablers of CPPS",
+      descBullets: ["Enhanced text-guided segmentation using multi-modal transformer (ClipSeg) and reduced misclassification and low confidence score using adaptive thresholding."
+      ]
+    },
+    
   ]
 };
 
@@ -191,31 +224,28 @@ const openSource = {
 
 // Some big projects you have worked on
 
-const myProjectsSection = { 
+const  myProjectsSection = {
   title: "My Projects",
-  subtitle: "Some of the exciting projects I've worked on.",
+  subtitle: "Here are a few of my personal projects.",
   projects: [
     {
       projectName: "Project 1",
-      projectDesc: "A detailed description of Project 1.",
+      projectDesc: "Description of project 1.",
       footerLink: [
         {
           name: "View Project",
-          url: "https://example.com/project1"
-        }
-      ]
+          url: "https://example.com",
+        },
+      ],
+      images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
     },
     {
       projectName: "Project 2",
-      projectDesc: "A detailed description of Project 2.",
-      footerLink: [
-        {
-          name: "View Project",
-          url: "https://example.com/project2"
-        }
-      ]
-    }
-  ]
+      projectDesc: "Description of project 2.",
+      footerLink: [], // No link for this project
+      images: [], // No images for this project
+    },
+  ],
 };
 
 const bigProjects = {

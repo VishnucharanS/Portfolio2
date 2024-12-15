@@ -1,54 +1,60 @@
 @import "../../_globalColor";
 
+// General Card Styles
 .card-image {
   max-width: 100%;
   height: auto;
   width: 250px;
 }
-.card-title {
+
+.project-title {
   color: $titleColor;
-  font-size: 22px;
-  line-height: 24px;
-  font-weight: 700;
-  margin: 15px 0 0 0;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 15px 0;
 }
-.card-subtitle {
+
+.project-subtitle {
   color: $cardSubtitle;
   font-size: 17px;
   line-height: 1.5rem;
 }
+
 .project-card {
   display: flex;
   flex-direction: column;
   background-color: $lightBackground2;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   justify-content: center;
+  margin-bottom: 2rem;
 }
+
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .project-card-dark {
   box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.25s ease;
 }
 
 .project-detail {
   text-align: center;
 }
+
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
+
 .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
 }
+
+// Project Image Styles
 .project-image {
   position: relative;
   height: 250px;
@@ -58,12 +64,15 @@
   align-items: center;
 }
 
-.projects-container {
+// Grid Container for Projects
+.repo-cards-div-main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
+// Modal Styles
 .project-description-modal {
   position: fixed;
   top: 0;
@@ -77,13 +86,47 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+
 .modal-content {
   position: relative;
   background-color: white;
-  padding: 30px 80px;
-  border-radius: 10%;
+  padding: 40px 100px; /* Increased size */
+  border-radius: 10px;
+  max-width: 800px; /* Limit width */
+  width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
 }
 
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.project-images img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: $buttonColor;
+  color: $lightBackground3;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: $buttonHover;
+}
 .close-btn {
   position: absolute;
   top: 0;
@@ -95,6 +138,7 @@
   cursor: pointer;
 }
 
+// Project Footer Tag Styles
 .project-card-footer span.project-tag {
   background: $buttonColor;
   color: $lightBackground3;
@@ -113,9 +157,91 @@
   transition: 0.2s ease-in;
 }
 
+// Modal Content Styles for Selected Project
+.project-name {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.project-desc {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: $buttonColor;
+  color: $lightBackground3;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: $buttonHover;
+}
+
+.subtitle{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+// Media Queries for Responsiveness
+@media (max-width: 1380px) {
+  .project-title {
+    font-size: 40px;
+  }
+
+  .repo-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-title {
+    font-size: 36px;
+  }
+
+  .card-title {
+    font-size: 32px;
+  }
+
+  .repo-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
+  .project-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .card-title {
+    font-size: 26px;
+  }
+
+  .repo-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1rem;
+  }
+
+  .project-card {
+    margin-top: 1rem;
+  }
+
   .project-subtitle {
     font-size: 16px;
     text-align: center;
   }
+  .project-header{
+    margin-bottom: 2rem;
+  }
+  .subtitle{
+    margin-top: 1rem;
+  }
 }
+

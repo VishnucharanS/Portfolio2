@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./MyProjects.scss"; // Create a separate SCSS file for custom styling
-import ProjectCard from "../../components/ProjectCard/ProjectCard"; // We'll create this component later
-import { myProjectsSection } from "../../portfolio"; // Add this data in portfolio.js
+import "./MyProjects.scss"; // Custom SCSS file
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import { myProjectsSection } from "../../portfolio";
 
 export default function MyProjects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -40,11 +40,29 @@ export default function MyProjects() {
             </span>
             <h2>{selectedProject.projectName}</h2>
             <p>{selectedProject.projectDesc}</p>
-            {selectedProject.footerLink && (
-              <a href={selectedProject.footerLink[0].url} target="_blank" rel="noopener noreferrer">
-                {selectedProject.footerLink[0].name}
-              </a>
+
+            {/* Optional images */}
+            {selectedProject.images && selectedProject.images.length > 0 && (
+              <div className="project-images">
+                {selectedProject.images.map((image, index) => (
+                  <img key={index} src={image} alt={`Project ${index + 1}`} />
+                ))}
+              </div>
             )}
+
+            {/* Optional link */}
+            {selectedProject.footerLink &&
+              selectedProject.footerLink.length > 0 &&
+              selectedProject.footerLink[0].url && (
+                <a
+                  href={selectedProject.footerLink[0].url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  {selectedProject.footerLink[0].name}
+                </a>
+              )}
           </div>
         </div>
       )}
