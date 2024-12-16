@@ -224,26 +224,28 @@ const openSource = {
 
 // Some big projects you have worked on
 
-const  myProjectsSection = {
+const myProjectsSection = {
   title: "My Projects",
   subtitle: "Here are a few of my personal projects.",
   projects: [
     {
-      projectName: "Project 1",
-      projectDesc: "Description of project 1.",
-      footerLink: [
-        {
-          name: "View Project",
-          url: "https://example.com",
-        },
+      projectName: "ROS2 Project",
+      projectDesc: "ROS2-Based Multi-Robot Warehouse Automation.",
+      points: [
+        "Devloped a ROS2-based multi-robot warehouse system with YOLOv5 for object detection and AI-driven dynamic task allocation in Gazebo.",
+        "Integrated Navigation Stack for path planning, collision avoidance, and inter-robot communication.",
       ],
-      images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
-    },
-    {
-      projectName: "Project 2",
-      projectDesc: "Description of project 2.",
-      footerLink: [], // No link for this project
-      images: [], // No images for this project
+      footerLink: [
+        // {
+        //   name: "View Project",
+        //   url: "https://example.com",
+        // },
+      ],
+      images: [
+        "https://via.placeholder.com/150",
+        "https://via.placeholder.com/150",
+        "https://drive.google.com/file/d/1TDQRU_EQ76Efc4NutrJWmpi_qoa_c2im/view?usp=sharing",
+      ],
     },
   ],
 };
