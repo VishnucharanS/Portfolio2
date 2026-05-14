@@ -188,6 +188,16 @@ const workExperiences = {
       ]
     },
     {
+      role: "Research Intern - Segmentation",
+      company: "NIT Trichy",
+      companylogo: require("./assets/images/NITT_logo_transparent back.png"),
+      date: "Nov 2023 – Feb 2024",
+      desc: "Enhancing FastSAM using tranasformers and adaptive learning",
+      descBullets: ["Integrated CLIPSeg with FastSAM and optimized parameters for zero-shot text-guided semantic segmentation.",
+        "Improved multi-object segmentation reliability using adaptive thresholding and semantic prompt understanding."
+      ]
+    },
+    {
       role: "Research intern - MCQ generation system",
       company: "UNSW Sydney",
       companylogo: require("./assets/images/UNSW-1-300x300.png"),
@@ -206,21 +216,12 @@ const workExperiences = {
       ]
     },
     {
-      role: "Research Intern - Segmentation",
-      company: "NIT Trichy",
-      companylogo: require("./assets/images/NITT_logo_transparent back.png"),
-      date: "Nov 2023 – Feb 2024",
-      desc: "Enhancing FastSAM using tranasformers and adaptive learning",
-      descBullets: ["Implementing an LSTM-based vision model for Bharatanatyam pose correction using skeletal keypoint extraction for real-time feedback "
-      ]
-    },
-    {
       role: "Research Intern - Analysis of CPPS",
       company: "IIT Delhi",
       companylogo: require("./assets/images/iit-delhi-indian-institute-of-technology-delhi5001.webp"),
       date: "May 2023 – Aug 2023",
-      desc: "Analysis of the enablers of CPPS",
-      descBullets: ["Enhanced text-guided segmentation using multi-modal transformer (ClipSeg) and reduced misclassification and low confidence score using adaptive thresholding."
+      desc: "Analysis of enabling technologies for Cyber-Physical Production Systems (CPPS).",
+      descBullets: ["Studied Industry 4.0 CPPS frameworks and enabling automation technologies.", "Implemented ML models and Correlation analysis to validate output from classical TISM model."
       ]
     },
     
@@ -239,28 +240,66 @@ const openSource = {
 
 const myProjectsSection = {
   title: "My Projects",
-  subtitle: "Here are a few of my personal projects.",
+  subtitle: "Robotics, perception, and real-time AI systems",
+
   projects: [
     {
-      projectName: "ROS2 Project",
-      projectDesc: "ROS2-Based Multi-Robot Warehouse Automation.",
+      projectName: "Autonomous Warehouse Robot Simulation",
+      projectDesc: "ROS2 + Gazebo-based mobile robotics system for autonomous navigation and retrieval tasks.",
       points: [
-        "Devloped a ROS2-based multi-robot warehouse system with YOLOv5 for object detection and AI-driven dynamic task allocation in Gazebo.",
-        "Integrated Navigation Stack for path planning, collision avoidance, and inter-robot communication.",
+        "Built a ROS2-based mobile robot pipeline with SLAM-based mapping and AMCL localization using LiDAR.",
+        "Enabled Nav2-based autonomous navigation with collision avoidance and classical vision-based object detection for goal retrieval."
       ],
       footerLink: [
-        // {
-        //   name: "View Project",
-        //   url: "https://example.com",
-        // },
+        {
+          //name: "View Simulation",
+          //url: "https://example.com/warehouse-robot"
+        }
       ],
       images: [
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
-        "https://drive.google.com/file/d/1TDQRU_EQ76Efc4NutrJWmpi_qoa_c2im/view?usp=sharing",
-      ],
+        "https://via.placeholder.com/300x200.png?text=Warehouse+Robot+1",
+        "https://via.placeholder.com/300x200.png?text=Warehouse+Robot+2"
+      ]
     },
-  ],
+
+    {
+      projectName: "ROS2 Multimodal contamination detection",
+      projectDesc: "Real-time sensor reliability monitoring using multimodal perception in ROS2.",
+      points: [
+        "Built a ROS2 pipeline fusing LiDAR (20Hz) and camera (14Hz) for real-time 3-class detection.",
+        "Trained a dual-branch ResNet18 late-fusion model using 12k+ rosbag data and deployed ROS nodes with state-machine inference."
+      ],
+      footerLink: [
+        {
+          name: "GitHub Repo",
+          url: "https://github.com/VishnucharanS/Contamination_Detection_AMT_Hackmining_SickIntelligence"
+        }
+      ],
+      images: [
+        "/home/vishnucharan/Portfolio Site/Portfolio2/src/assets/images/contam1.png",
+        //"https://via.placeholder.com/300x200.png?text=ROS2+Pipeline+2"
+      ]
+    },
+
+    {
+      projectName: "Remote Sensing Image Captioner",
+      projectDesc: "Transformer-based image captioning system for satellite imagery.",
+      points: [
+        "Developed a captioning model using InceptionV3 encoder and Transformer decoder for remote sensing images.",
+        "Achieved BLEU score of 0.59/1.00 (human: 0.60/1.00) and deployed a web app for real-time geo-satellite captioning."
+      ],
+      footerLink: [
+        {
+          name: "Github Repo",
+          url: "https://github.com/VishnucharanS/TRINIT-JUST_A_WHATSAPP_GROUP-ML-03"
+        }
+      ],
+      images: [
+        //"https://via.placeholder.com/300x200.png?text=Captioner+1",
+        //"https://via.placeholder.com/300x200.png?text=Captioner+2"
+      ]
+    }
+  ]
 };
 
 const bigProjects = {
@@ -413,7 +452,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91 77089 51932",
+  number: "+49 15510861124",
   email_address: "svc16122003@gmail.com"
 };
 

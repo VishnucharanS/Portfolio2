@@ -1,7 +1,11 @@
 @import "../_globalColor";
 
 .dark-mode {
-  background-color: $darkBackground;
-  color: white;
-  transition: "0.1s";
+  background-color: #1a1a1a; // Adjust this for the overall background
+  color: #ffffff;
+
+  // Look for nested components or variables here
+  .project-card {
+    background-color: #262626; // Adjust this for the card color in your screenshot
+  }
 }
